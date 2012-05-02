@@ -2,7 +2,7 @@
 Pointers on C - Chapter 1 - Exercise 2
 ex_ch1_2.c - Input line echoer w/ line numbers
 
-author: nicolas steven miller
+author: nicolas steven miller <nicolasmiller.gmail.com>
 */
 
 #include <stdio.h>
