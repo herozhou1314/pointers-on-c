@@ -4,3 +4,4 @@ My solutions for exercises in Kenneth Reek's book Pointers on C.
 
 ex_ch1_1.c - Hello, World!
 ex_ch1_2.c - Input line echoer w/ line numbers
+ex_ch1_3.c - Input line echoer w/ checksum (ignoring overflow)
