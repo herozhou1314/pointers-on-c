@@ -1,6 +1,7 @@
 /*
-Pointers on C - Chapter 1 - Exercise 5 
-ex_ch1_5.c - Modify rearrange function in chapter example for non-increasing order inputs 
+Pointers on C - Chapter 1 - Exercise 6
+ex_ch1_6.c - Modify rearrange program to allow for odd number of column inputs
+last index copies from there to end of input
 
 author: nicolas steven miller <nicolasmiller@gmail.com>
 */
@@ -49,11 +50,6 @@ int read_column_numbers(int columns[], int max)
 	while(num < max && scanf("%d", &columns[num]) == 1
 		&& columns[num] >= 0)
 		num += 1;
-
-	if(num % 2 != 0) {
-		puts("Last column number is not paired.");
-		exit(EXIT_FAILURE);
-	}
 
 	while((ch = getchar()) != EOF && ch != '\n');
 
@@ -108,7 +104,16 @@ void rearrange(char* output, char const *input, int n_columns,
 	output_col = 0;
 
 	for(col = 0; col < n_columns; col += 2) {
-		int  nchars = columns[col + 1] - columns[col] + 1;
+		int  nchars;
+	
+		// if we've reached the last column index and it's not paired
+		// copy to the end of the input line 
+		if(n_columns % 2 != 0 && col == n_columns - 1) {
+			nchars = MAX_INPUT_LENGTH - columns[col] + 1;
+		}
+		else {
+			nchars = columns[col + 1] - columns[col] + 1;
+		}
 
 		if(columns[col] >= len ||
 			output_col == MAX_INPUT_LENGTH - 1)

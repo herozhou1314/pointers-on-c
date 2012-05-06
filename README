@@ -5,3 +5,9 @@ My solutions for exercises in Kenneth Reek's book Pointers on C.
 ex_ch1_1.c - Hello, World!
 ex_ch1_2.c - Input line echoer w/ line numbers
 ex_ch1_3.c - Input line echoer w/ checksum (ignoring overflow)
+ex_ch1_4.c - Read a series of input lines, compute length of each, print 
+only the longest assuming 1000 character max line length (scary...)
+ex_ch1_5.c - Modify rearrange function in chapter example for non-increasing
+order inputs 
+ex_ch1_6.c - Modify rearrange program to allow for odd number of column inputs
+last index copies from there to end of input
