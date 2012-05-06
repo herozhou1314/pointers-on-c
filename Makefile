@@ -5,9 +5,11 @@ all:
 	gcc -o ex_ch1_2 ex_ch1_2.c
 	gcc -o ex_ch1_3 ex_ch1_3.c
 	gcc -o ex_ch1_4 ex_ch1_4.c
+	gcc -o ex_ch1_5 ex_ch1_5.c
 
 clean:
 	rm -f ex_ch1_1
 	rm -f ex_ch1_2
 	rm -f ex_ch1_3
 	rm -f ex_ch1_4
+	rm -f ex_ch1_5

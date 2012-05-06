@@ -1,6 +1,6 @@
 /*
 Pointers on C - Chapter 1 - Exercise 4
-ex_ch1_3.c - Read a series of input lines, compute length of each, print 
+ex_ch1_4.c - Read a series of input lines, compute length of each, print 
 only the longest assuming 1000 character max line length (scary...)
 
 author: nicolas steven miller <nicolasmiller@gmail.com>
