@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 2 - Exercise 1 
+Pointers on C - Chapter 2 - Exercise 1 
 main.c - main test function for increment and negate functions
 
 author: nicolas steven miller <nicolasmiller@gmail.com>

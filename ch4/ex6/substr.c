@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 6 
+Pointers on C - Chapter 4 - Exercise 6 
 substr.c - substr function and main test function 
 following req'ts given in ex writeup
 

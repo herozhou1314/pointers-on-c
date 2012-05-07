@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 2 
+Pointers on C - Chapter 4 - Exercise 2 
 naive_prime.c - naive method for printing primes from 1-100 
 
 author: nicolas steven miller <nicolasmiller@gmail.com>

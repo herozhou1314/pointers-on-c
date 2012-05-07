@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 1 
+Pointers on C - Chapter 4 - Exercise 1 
 sqrt_approx.c - sqrt approximation
 
 author: nicolas steven miller <nicolasmiller@gmail.com>

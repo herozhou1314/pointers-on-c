@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 3 
+Pointers on C - Chapter 4 - Exercise 3 
 triangle.c - determine type of triangle for integer side length inputs 
 
 author: nicolas steven miller <nicolasmiller@gmail.com>

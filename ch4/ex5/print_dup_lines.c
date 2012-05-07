@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 5 
+Pointers on C - Chapter 4 - Exercise 5 
 print_dup_lines.c - prints one copy of each set of identical input lines
 assuming max line length of 128 
 

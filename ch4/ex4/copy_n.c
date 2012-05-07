@@ -1,5 +1,5 @@
 /* 
-Pointers on Pointers on C - Chapter 4 - Exercise 4 
+Pointers on C - Chapter 4 - Exercise 4 
 copy_n.c - copy_n function and main test function 
 
 author: nicolas steven miller <nicolasmiller@gmail.com>
