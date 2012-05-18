@@ -10,7 +10,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 #include <string.h>
 #define MAX_LINE_LENGTH 1000
 
-int main(char* argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char buf[MAX_LINE_LENGTH]; 
 	char max_buf[MAX_LINE_LENGTH]; 
