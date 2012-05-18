@@ -18,7 +18,7 @@ void copy_n(char dst[], char src[], int n) {
 	}
 }
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char src[] = "foobar";
 	char dst[32];
