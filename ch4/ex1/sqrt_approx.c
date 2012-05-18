@@ -26,7 +26,7 @@ float sqrt_approx(float n)
 	return approx;
 }
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	printf("sqrt_approx(2.0): %f\n", sqrt_approx(2.0f));	
 	printf("sqrt_approx(16.0): %f\n", sqrt_approx(16.0f));	
