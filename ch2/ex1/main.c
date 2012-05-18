@@ -8,7 +8,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 #include "increment.h"
 #include "negate.h"
 
-int main(char* argv[], int argc)
+int main(int argc, char* argv[])
 {
 	printf("increment(10) : %d\n", increment(10));
 	printf("increment(0) : %d\n", increment(0));
