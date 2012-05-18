@@ -8,7 +8,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 */
 #include <stdio.h>
 
-int main(char* argv[], int argc)
+int main(int argc, char* argv[])
 {
 	int braces = 0;
 	int ch;
