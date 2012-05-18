@@ -7,7 +7,7 @@ author: nicolas miller <nicolasmiller@gmail.com>
 
 #include <stdio.h>
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	int ch;
 	while((ch = getchar()) && ch != EOF) {
