@@ -7,7 +7,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 #include <stdio.h>
 #include <stdlib.h>
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char triangle[3];
 	printf("Enter 3 side lengths separate by spaces: ");
