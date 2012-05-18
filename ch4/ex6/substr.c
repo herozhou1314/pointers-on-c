@@ -27,7 +27,7 @@ int substr(char dst[], char src[], int start, int len) {
 	return strlen(dst);
 }
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char *str = "foobarbaz";
 	char dest1[16];
