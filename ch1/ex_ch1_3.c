@@ -7,7 +7,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 
 #include <stdio.h>
 
-int main(char* argv[], int argc)
+int main(int argc, char* argv[])
 {
 	int character = 0;
 	char checksum = -1;
