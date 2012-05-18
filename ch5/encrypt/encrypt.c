@@ -16,7 +16,7 @@ int encrypt(int ch)
 		return 'A' + ((ch - 'A') + 13) % 26;
 }
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	int ch;
 	while((ch = getchar()) && ch != EOF) {
