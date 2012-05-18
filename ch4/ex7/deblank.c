@@ -30,7 +30,7 @@ void deblank(char string[])
 	free(buffer);
 }
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char s1[] = "  foo bar   baz  ";
 	char s2[] = "foo     bar       baz    ";
