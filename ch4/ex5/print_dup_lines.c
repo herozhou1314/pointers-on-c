@@ -11,7 +11,7 @@ author: nicolas steven miller <nicolasmiller@gmail.com>
 
 #define MAX_LINE_LENGTH 128
 
-int main(char *argv[], int argc)
+int main(int argc, char* argv[])
 {
 	char past[MAX_LINE_LENGTH];
 	char input[MAX_LINE_LENGTH];
