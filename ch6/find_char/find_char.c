@@ -43,17 +43,17 @@ int main(int argc, char* argv[])
 	char *chars5 = "EERP";
 	char *empty = "";
 
-	printf("%d\n", find_char(NULL, chars1) == NULL); /* NULL */
-	printf("%d\n", find_char(source1, NULL) == NULL); /* NULL */
-	printf("%d\n", find_char(NULL, NULL) == NULL); /* NULL */
-	printf("%d\n", find_char(empty, chars1) == NULL); /* NULL */
-	printf("%d\n", find_char(source1, empty) == NULL); /* NULL */
+	printf("%d\n", find_char(NULL, chars1) == NULL);
+	printf("%d\n", find_char(source1, NULL) == NULL);
+	printf("%d\n", find_char(NULL, NULL) == NULL);
+	printf("%d\n", find_char(empty, chars1) == NULL);
+	printf("%d\n", find_char(source1, empty) == NULL);
 
-	printf("%d\n", find_char(source1, chars1) == NULL); /* NULL */
-	printf("%d\n", find_char(source1, chars2) == NULL); /* NULL */
-	printf("%d\n", find_char(source1, chars3) == NULL); /* NULL */
-	printf("%d\n", *find_char(source1, chars4) == 'C'); /* C */
-	printf("%d\n", *find_char(source2, chars5) == 'P'); /* C */
+	printf("%d\n", find_char(source1, chars1) == NULL);
+	printf("%d\n", find_char(source1, chars2) == NULL);
+	printf("%d\n", find_char(source1, chars3) == NULL);
+	printf("%d\n", *find_char(source1, chars4) == 'C');
+	printf("%d\n", *find_char(source2, chars5) == 'P');
 	
 	return 1;
 }
