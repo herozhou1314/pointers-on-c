@@ -47,7 +47,6 @@ int del_substr(char *str, char const *substr)
 	if(substr_start == NULL)
 		return 0;
 	char *after_substr = substr_start + my_naive_strlen(substr);
-	*substr_start = 'Q';
 
 	while(*after_substr != '\0') {
 		*substr_start =  *after_substr;
