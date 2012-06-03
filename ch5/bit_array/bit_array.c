@@ -51,7 +51,7 @@ int test_bit(char bit_array[], unsigned bit_number)
 {
 	unsigned char mask = 1;
 	mask <<= bit_index(bit_number);
-	return bit_array[array_index(bit_number)] &= mask;
+	return bit_array[array_index(bit_number)] & mask;
 }
 
 int main(int argc, char* argv[])
@@ -60,7 +60,7 @@ int main(int argc, char* argv[])
 	int i;
 	
 	// clear all bits to start
-	for(i = 0; i < ARRAY_SIZE; i++) {
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
 		clear_bit(bit_array, i);
 	}
 
@@ -73,7 +73,7 @@ int main(int argc, char* argv[])
 	}
 	
 	// verify no other bits were set
-	for(i = 0; i < ARRAY_SIZE; i++) {
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
 		if(i == 24)
 			continue;
 		if(test_bit(bit_array, i)) {
@@ -83,7 +83,7 @@ int main(int argc, char* argv[])
 	}
 	
 	clear_bit(bit_array, 24);
-	for(i = 0; i < ARRAY_SIZE; i++) {
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
 		if(test_bit(bit_array, i)) {
 			printf("all bits should be zero; failure\n");
 			exit(-1);
@@ -99,7 +99,7 @@ int main(int argc, char* argv[])
 	}
 	
 	// verify no other bits were set
-	for(i = 0; i < ARRAY_SIZE; i++) {
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
 		if(i == 13)
 			continue;
 		if(test_bit(bit_array, i)) {
@@ -109,11 +109,43 @@ int main(int argc, char* argv[])
 	}
 
 	assign_bit(bit_array, 13, 0);
-	for(i = 0; i < ARRAY_SIZE; i++) {
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
 		if(test_bit(bit_array, i)) {
 			printf("all bits should be zero; failure\n");
 			exit(-1);
 		}
 	}
+
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
+		set_bit(bit_array, i);
+	}
+
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
+		if(!test_bit(bit_array, i)) {
+			printf("all bits should be set; failure\n");
+			exit(-1);
+		}
+	}
+
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
+		clear_bit(bit_array, i);
+	}
+
+	for(i = 8; i < 16; i++) {
+		set_bit(bit_array, i);
+		printf("%d\n", bit_array[1]);
+		clear_bit(bit_array, i);
+	}
+
+	for(i = 0; i < ARRAY_SIZE * 8; i++) {
+		clear_bit(bit_array, i);
+	}
+
+	for(i = 0; i < 16; i++) {
+		set_bit(bit_array, i);
+		printf("0: %d\n", bit_array[0]);
+		printf("1: %d\n", bit_array[1]);
+	}
+
 	return 1;
 }
