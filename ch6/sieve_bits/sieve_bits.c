@@ -1,6 +1,6 @@
 /*
-Pointers on c - ch6, ex4
-sieve1.c - basic sieve of eratosthenes 
+Pointers on c - ch6, ex5
+sieve_bits.c - more space efficient bit array sieve of eratosthenes 
 
 author: nicolas miller <nicolasmiller@gmail.com>
 */
