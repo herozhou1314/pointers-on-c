@@ -19,5 +19,5 @@ int hermite(int n, int x)
 
 int main(int argc, char* argv[])
 {
-	printf("%d\n", hermite(3, 2));
+	printf("%d\n", hermite(3, 2)); /* 40 */
 }
