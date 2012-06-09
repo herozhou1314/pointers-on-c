@@ -1,5 +1,5 @@
 /*
-Pointers on c - ch9, ex7
+Pointers on c - ch9, ex8
 my_strnchr.c
 
 author: nicolas miller <nicolasmiller@gmail.com>
